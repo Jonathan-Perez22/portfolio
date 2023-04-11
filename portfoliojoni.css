@@ -1,0 +1,186 @@
+html{
+    scroll-behavior: smooth;
+}
+*{
+    box-sizing: border-box;
+    font-family: sans-serif;
+    margin: 0;padding: 0;
+}
+body{
+    background:linear-gradient(
+        0deg,
+        rgba(0,0,0,0.9),
+        rgba(180,180,180,0.6),
+        rgba(180,180,180,0.6)
+        )
+    }
+    /* HERO */
+    #hero{
+    width: 100%;height: 70vh;background-color: rgb(160,160,160);
+    display: flex;justify-content: space-evenly;
+}
+#hero .imagen{
+    width: 40%;
+   background-image: linear-gradient(
+    0deg,
+    rgba(0,0,0,0.6),
+    rgba(0,0,0,0.6)
+   ),url("img/foto-perfil");
+   background-position: center center;
+   background-repeat: no-repeat;
+   background-size: cover;
+    border-radius: 50%;
+}
+#hero .presento{
+    width: 60%;
+    display: flex;flex-direction: row; align-items: center;justify-content:flex-start;
+    color: rgb(0,0,0);font-size: 2.55em;
+}
+.presento{
+    padding: 0px 25px;
+}
+.presento .acento{
+    color: rgb(138, 43, 226);
+}
+/* HERITO */
+#herito{
+    height: 30vh;width: 100%;
+    background-color: rgb(138,43,226,0.8);
+    color: rgba(0,0,0,0.8);font-size: 1.8em;text-align: center;
+    display: flex;flex-direction: column; align-items: center;justify-content: center;
+}
+#herito h4{
+margin: 0;
+}
+/* SOBRE MI */
+#sobre-mi{
+    padding: 50px;margin: auto;
+    height: 100vh;
+    display: flex;flex-direction: row;
+    align-items: center;justify-content: center;
+}
+#sobre-mi .info{
+    width: 50%;height: 80%; background-color:rgb(130, 120, 255);
+    display: flex;flex-direction: column;
+}
+#sobre-mi .info header{
+    background:linear-gradient(
+        0deg,
+        rgb(130,120,255),
+        rgb(138,43,226),
+        rgb(138,43,226),
+        rgb(130,120,255)
+
+    );
+    height: 20%;
+    align-items: center;
+    display: flex;
+    justify-content: flex-start;
+    padding: 0px 20px;
+    font-size: 1.8em;
+    /* position: initial; */
+}
+.info .contenedor{
+    display: flex;flex-direction: row;justify-content: center;align-items: center;height: 80%;
+}
+.col1 , .col2{
+    padding: 15px 10px;height: 100%;
+    display: flex;flex-direction: column;justify-content: flex-start;align-items:flex-start;
+}
+.col1 h5, .col2 h5{
+    padding: 5px 0px;font-size: 1.4em;
+}
+#sobre-mi .video{
+    width: 50%;height: 80%; background-color: black;
+}
+/* MENU */
+.menu{
+    height: 15vh;width: 100%;
+    background-color: rgb(138,43,224);
+    display: flex;flex-direction: row;justify-content: space-around;align-items: center;text-align: center;
+}
+.menu a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 125px; height: 55px;
+    border-radius: 15px 15px 15px 15px;
+    background: linear-gradient(
+        6deg,
+        rgba(138,43,224,1),
+        rgba(10,10,10,1)
+    ); 
+    color: azure;
+    text-decoration: none;
+    transition: 0.5s;
+    }
+.menu a:hover{
+    background:linear-gradient(
+        0deg,
+        rgba(10,10,10,1),
+        rgba(138,43,224,1)
+    ); 
+    color:rgb(230, 230, 230);
+    font-size: 1.15em;
+    transition: 0.2s;
+    border-radius: 0px;
+}
+/* DATOS ACADEMICOS */
+#datos-academicos{
+    height: 100vh;width: 100%;
+    display: flex;flex-direction: column;justify-content: center;align-items: center;
+}
+#datos-academicos .contenedor{
+    display: flex;flex-direction: row;justify-content: center;align-items: center;width: 100%;padding: 30px 30px; gap: 15px;
+}
+.contenedor .colegios{
+    display: flex;flex-direction: row;justify-content: center;align-items: center;gap: 15px;
+}
+#datos-academicos .contenedor .carta{
+    height: 100%;width: 300px; margin: auto;
+    background-color: lemonchiffon;
+}
+#datos-academicos .contenedor .idiomas, .colegios{
+    height: 100%;
+}
+
+/* LENGUAJES DE PROGRAMACION */
+#lenguajes-programacion{
+    height: 50%;width: 100%;
+    display: flex;flex-direction: column;
+    align-items:start;justify-content: center;text-align: center;
+}
+#lenguajes-programacion header{
+    width: 100%;height: 90px;
+    color: rgba(235,235,235,0.8);
+    font-weight: bold;font-size: 1.3em;font-family: fantasy; font-style: oblique;
+    background: linear-gradient(
+        25deg,
+        rgba(0, 0, 255,0.6),
+        rgba(0, 128, 0,0.6),
+        rgba(255, 0, 0,0.6),
+        rgba(255, 192, 203,0.6),
+        rgba(138, 43, 226,0.6)
+    );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#lenguajes-programacion .contenedor{
+    width: 100%;
+    display: flex;flex-direction: column;
+    align-items:center;justify-content: center;
+    font-size: 1.4em;
+}
+#lenguajes-programacion .contenedor .fordcard{
+    width: 100%;
+    display: flex;flex-direction: row; 
+    justify-content: center;align-items: center;
+    gap: 20px;
+}
+#lenguajes-programacion .contenedor .fordcard .carta{
+    width: 200px;height: 450px;
+    margin: 0;padding: 0px;
+    background-color: green;
+}
